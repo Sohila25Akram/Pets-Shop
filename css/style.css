@@ -11,14 +11,15 @@
 }
 html{
     scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     width: 100%;
     padding: 0 20px;
 }
 main header.container{
-    padding-top:24px;
-    padding-bottom: 24px;
+    padding-top:10px;
+    padding-bottom: 10px;
     background-color: #000;
     display: flex;
     justify-content: space-between; 
@@ -32,7 +33,7 @@ main header.container{
 .logo{
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 70%;
     font-size: 1.6rem;
 }
 .logo img{
@@ -89,6 +90,8 @@ input:checked+nav{
         padding: 0 80px;
     }
     main header.container{
+        padding-top:24px;
+        padding-bottom: 24px;
         flex-wrap: nowrap;
     }
     input+nav{
@@ -118,8 +121,8 @@ input:checked+nav{
 }
 
 main div.container{
-    background:url('../img/Banner-1.jpg') no-repeat top center/cover;
-    margin-top: 100px;
+    background:linear-gradient(rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)), url('../img/Banner-1.jpg') no-repeat top center/cover ;
+    margin-top: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -139,7 +142,6 @@ main div.container h2{
 }
 main div.container p{
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     margin-bottom: 40px;
     line-height: 1.6;
@@ -147,14 +149,14 @@ main div.container p{
 main div.container div a{
     display: inline-block;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:14px 30px;
     color: #7AB72C;
     text-transform: capitalize;
     font-style: italic;
     background-color: #fff;
     border-radius: 25px;
-    margin-right: 5px;
+    margin: 5px;
+    margin-left: 0;
 }
 main div.container div a i{
     margin-right: 10px;
@@ -164,7 +166,6 @@ main div.container div a i{
         margin-top: 100px;
     }
     main div.container{
-        background:url('../img/Banner-1.jpg') no-repeat top center/cover;
         margin-top: 0;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -190,7 +191,6 @@ main div.container div a i{
 
 .header-green{
     border-left: 5px solid #7AB72C;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 40px;
 }
 .header-green h3{
@@ -211,7 +211,6 @@ main div.container div a i{
 #about div.container{
     padding-top: 60px;
     padding-bottom: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #about div.container img{
     width:100%;
@@ -322,7 +321,6 @@ main div.container div a i{
     text-align: justify;
     margin-bottom: 16px;
     color: #7A7A7A;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #services .container article .card i{
     font-size: 4rem;
@@ -409,7 +407,6 @@ main div.container div a i{
     width:100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #offer .container div p{
     margin-bottom: 70px;
@@ -456,7 +453,6 @@ main div.container div a i{
     outline: 1px dashed #CCCCCC;
     outline-offset: 3px;
     border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #price .container .types div h5{
     text-transform: uppercase;
@@ -569,7 +565,6 @@ main div.container div a i{
     flex-direction: column;
     background-color:#F3F3F3;
     padding: 10px 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #blog .our-cards figure figcaption span{
     display: inline-block;
@@ -639,7 +634,6 @@ main div.container div a i{
 }
 footer{
     background-color: #F3F3F3;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer .container{
     padding-top:100px;
@@ -673,13 +667,14 @@ footer .container ul li i{
     color: #7AB72C;
 }
 footer .container ul li form{
-    width:330px;
+    max-width:330px;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 14px;
 
 }
 footer .container ul li form input{
-    width:62%;
+    width:70%;
     padding:16px 12px;
     font-size: 1.06rem;
     outline: none;
@@ -690,7 +685,7 @@ footer .container ul li form input::placeholder{
     text-transform: capitalize;
 }
 footer .container ul li form button{
-    width:28%;
+    width:30%;
     background-color: #7AB72C;
     color: #fff;
     text-transform: uppercase;
@@ -699,6 +694,7 @@ footer .container ul li form button{
     border: none;
     font-weight: bold;
     cursor: pointer;
+    padding:0 5px
 }
 footer .container ul li.links{
     color: #000;
