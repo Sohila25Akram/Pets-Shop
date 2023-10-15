@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 html{
-    
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -24,7 +24,7 @@ main header.container{
     justify-content: space-between; 
     align-items: center; 
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     top:0px;
     right:0;
     width:100%;
@@ -90,7 +90,6 @@ input:checked+nav{
     }
     main header.container{
         flex-wrap: nowrap;
-        position: relative;
     }
     input+nav{
         display: inline;
@@ -161,8 +160,8 @@ main div.container div a i{
     margin-right: 10px;
 }
 @media(min-width:992px){
-    #main{
-        /* background:url('../img/Banner-1.jpg') no-repeat center center/cover; */
+    main{
+        margin-top: 100px;
     }
     main div.container{
         background:url('../img/Banner-1.jpg') no-repeat top center/cover;
