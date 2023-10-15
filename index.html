@@ -18,22 +18,24 @@
                 <label for="menu"><i class="fa-solid fa-bars"></i></label>
                 <input type="checkbox" id="menu">
                 <nav>
-                    <a href="#home" class="active">home</a>
+                    <a href="#" class="active">home</a>
                     <a href="#about">about us</a>
                     <a href="#services">services</a>
                     <a href="#price">products</a>
                     <a href="#blog">site map</a>
                 </nav>
             </header>
-            <div class="container">
-                <h1>Pets shop</h1>
-                <h2>make your pits happy</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eius quia maiores earum atque veritatis voluptatem odio, beatae totam tenetur libero quaerat aspernatur culpa ullam, aliquid excepturi id vero ducimus. Officiis fugit laboriosam asperiores necessitatibus consequuntur.</p>
-                <div>
-                    <a href="">read more</a>
-                    <a href=""><i class="fa-solid fa-play"></i> start video</a>
+            
+                <div class="container">
+                    <h1>Pets shop</h1>
+                    <h2>make your pits happy</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eius quia maiores earum atque veritatis voluptatem odio, beatae totam tenetur libero quaerat aspernatur culpa ullam, aliquid excepturi id vero ducimus. Officiis fugit laboriosam asperiores necessitatibus consequuntur.</p>
+                    <div>
+                        <a href="#">read more</a>
+                        <a href="#"><i class="fa-solid fa-play"></i> start video</a>
+                    </div>
                 </div>
-            </div>
+            
         </main>
         <section id="about">
             <div class="container">
@@ -116,7 +118,7 @@
             <div class="container">
                 <header class="header-green">
                     <h3>special offer</h3>
-                    <h2>latest articles from our blog</h2>
+                    <h2>save 50% on all items</h2>
                 </header>
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem atque, soluta tempore deserunt, sed veniam, optio eum voluptatem autem ea! Ad voluptatibus consequuntur modi corrupti nisi porro dolore nobis ut sint! Doloremque alias assumenda fuga a voluptatum debitis quia quis voluptatem, quaerat dolores, repellat dolorum, minus possimus velit repellendus.</p>
@@ -128,7 +130,7 @@
             <div class="container">
                 <header class="header-green">
                     <h3>latest blog</h3>
-                    <h2>latest articles from our blog</h2>
+                    <h2>competitive pricing for pet services</h2>
                 </header>
                 <div class="types">
                     <div>
@@ -171,7 +173,7 @@
             <div class="container">
                 <header class="header-green">
                     <h3>latest blog</h3>
-                    <h2>latest articles from our blog</h2>
+                    <h2>latest articles from our blog post</h2>
                 </header>
                 <div class="our-cards">
                     <figure>
@@ -282,5 +284,16 @@
                 terms & conditions | privacy policy | customer support | payments | help | FAQs
             </p>
         </footer>
+        <script>
+            let links = document.querySelectorAll('nav a');
+                for(var i=0; i< links.length; i++){
+                    links[i].onclick = function() {
+                        for(var j=0; j < links.length; j++){
+                            links[j].classList.remove('active');
+                        }
+                        this.classList.add('active');
+                    }
+                }
+        </script>
     </body>
 </html>
