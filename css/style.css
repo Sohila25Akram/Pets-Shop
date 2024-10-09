@@ -3,6 +3,7 @@
     src: url('../webfonts/satisfy.woff2') format('woff2'),
         url('../webfonts/satisfy.woff') format('woff'),
         url('../webfonts/satisfy.ttf') format('ttf');
+    font-display: swap;
 }
 *{
     margin: 0;
