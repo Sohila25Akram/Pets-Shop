@@ -565,6 +565,7 @@ main div.container div a i{
     flex-direction: column;
     background-color:#F3F3F3;
     padding: 10px 24px;
+    flex-grow: 1;
 }
 #blog .our-cards figure figcaption span{
     display: inline-block;
@@ -577,7 +578,6 @@ main div.container div a i{
 }
 #blog .our-cards figure figcaption div{
     border-bottom: thin dotted #7AB72C;
-
 }
 #blog .our-cards figure figcaption h3{
     margin: 18px 0 20px;
@@ -604,6 +604,10 @@ main div.container div a i{
     #blog .our-cards figure .border-rad{
         height:320px;
     }
+    #blog .our-cards figure img{
+       height: 100%;
+       width: auto;
+    }
     #blog .our-cards figure figcaption a{
         align-self: flex-end;
     }
@@ -615,21 +619,22 @@ main div.container div a i{
         justify-content: space-between;
     }
     #blog .our-cards figure{
-        width:49%;
+        width: 30%;
     }
     #blog .our-cards figure .border-rad{
+        display: block;
         height:fit-content;
     }
     #blog .our-cards figure img{
-        width: 50%;
+        width: 100%;
     }
     #blog .our-cards figure figcaption a{
         text-align: right;
     }
 }
 @media(min-width:1400px){
-    #blog .our-cards figure img{
-        width: 40%;
+    #blog .our-cards figure{
+        width: 24%;
     }
 }
 footer{
@@ -671,7 +676,6 @@ footer .container ul li form{
     display: flex;
     justify-content: space-between;
     margin-bottom: 14px;
-
 }
 footer .container ul li form input{
     width:70%;
